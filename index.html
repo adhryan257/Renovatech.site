@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovatech - Celulares Usados Renovados</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 45%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    color: #2c3e50;
+    margin-top: 1rem;
+}
+
+.produto p {
+    color: #555;
+}
+
+.comprar-btn {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.comprar-btn:hover {
+    background-color: #34495e;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #34495e;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+#rastreamento {
+    margin-top: 2rem;
+}
+
+#rastreamento input {
+    width: 50%;
+    padding: 0.5rem;
+    margin-right: 10px;
+}
+
+#rastreamento button {
+    padding: 0.5rem 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#rastreamento button:hover {
+    background-color: #34495e;
+}
+
+#resultado-rastreamento {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1rem;
+}</style></head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Renovatech</h1>
+            <p>Celulares Usados Renovados</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#pagamento">Pagamento</a></li>
+                <li><a href="#rastreamento">Rastreamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home">
+        <h2>Bem-vindo à Renovatech!</h2>
+        <p>Oferecemos celulares usados, mas completamente renovados e em excelente estado.</p>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="celular1.jpg" alt="Samsung Galaxy S10">
+                <h3>Samsung Galaxy S10</h3>
+                <p>Celular usado, mas em ótimo estado. A partir de R$ 1.000,00.</p>
+                <a href="#pagamento" class="comprar-btn">Comprar</a>
+            </div>
+            <div class="produto">
+                <img src="celular2.jpg" alt="iPhone 8">
+                <h3>iPhone 8</h3>
+                <p>Completamente renovado e funcional. A partir de R$ 1.200,00.</p>
+                <a href="#pagamento" class="comprar-btn">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver alguma dúvida ou precisar de ajuda, entre em contato conosco.</p>
+        <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seção de Pagamento -->
+    <section id="pagamento">
+        <h2>Finalizar Compra</h2>
+        <p>Escolha a forma de pagamento abaixo:</p>
+        <!-- Link gerado para pagamento via Mercado Pago -->
+        <a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=ID_DA_PREFERENCIA" target="_blank" class="btn-pagamento">Pagar com Mercado Pago</a>
+        <a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=ID_DA_PREFERENCIA_PIX" target="_blank" class="btn-pagamento">Pagar com Pix</a>
+    </section>
+
+    <!-- Seção de Rastreamento -->
+    <section id="rastreamento">
+        <h2>Rastreamento do Pedido</h2>
+        <p>Informe o número do código de rastreamento abaixo para acompanhar o envio do seu pedido.</p>
+        <form id="form-rastreamento">
+            <label for="codigo">Código de Rastreamento:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Digite o código de rastreamento" required>
+            <button type="submit">Rastrear</button>
+        </form>
+        <div id="resultado-rastreamento">
+            <!-- O status do rastreamento será exibido aqui -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Renovatech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+<script type="text/javascript" id="dcoder_script">document.getElementById('form-rastreamento').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var codigo = document.getElementById('codigo').value;
+    
+    // Chamar o servidor para pegar os dados de rastreamento via API dos Correios
+    fetch('rastrear.php?codigo=' + codigo)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('resultado-rastreamento').innerHTML = 'Status: ' + data.status;
+        })
+        .catch(error => {
+            document.getElementById('resultado-rastreamento').innerHTML = 'Erro ao rastrear pedido.';
+        });
+});</script></body></html>
